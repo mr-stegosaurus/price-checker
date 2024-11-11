@@ -1,0 +1,15 @@
+{
+  "name": "your-project-name",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node src/index.js",
+    "dashboard": "node src/services/visualization/server.js"
+  },
+  "dependencies": {
+    "@uniswap/sdk-core": "^5.9.0",
+    "@uniswap/v3-sdk": "^3.18.1",
+    "ethers": "^6.13.4",
+    "express": "^4.21.1",
+    "plotly.js": "^2.35.2"
+  }
+}

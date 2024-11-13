@@ -70,12 +70,6 @@ const CURVE_POOLS = {
     }
 };
 
-function getStablecoinDecimals(chainId) {
-    const networkName = getNetworkName(chainId);
-    const poolInfo = CURVE_POOLS[networkName]?.['ETH/USDC'] || CURVE_POOLS[networkName]?.['ETH/crvUSD'];
-    return poolInfo?.usdcDecimals || 6; // Default to 6 if not found
-}
-
 async function getPrice(chainId, provider) {
     try {
         const networkName = getNetworkName(chainId);
